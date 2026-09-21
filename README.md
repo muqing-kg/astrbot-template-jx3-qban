@@ -33,7 +33,8 @@ data/plugin_data/astrbot_plugin_qq_group_daily_analysis/custom_t2i_templates/rep
 ## 说明
 
 - 安装后的模板名由模板目录名决定，即 `jx3_qban_txk`；如需改名，重命名目录即可。
-- 图片与表情贴图走 jsDelivr CDN（钉在固定 commit），渲染时需要网络。
+- 贴图自持于本仓库 `assets/jx3_qban/`，通过 jsDelivr CDN 分发（钉在固定 commit），渲染时需要网络。
+- `assets/` 位于模板目录之外，不计入安装包体积；单独下载模板目录即得轻量包。
 - 同时包含图片长图（`image_template.html`）与网页日报（`html_template.html`）两个入口。
 - 内置模板已有 `jx3_qban` 的插件（本模板的上游 fork）装载本包时不会冲突，因为模板名为 `jx3_qban_txk`。
 
